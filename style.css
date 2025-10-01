@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    line-height: 110%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100vw;
+    height: auto;
+    aspect-ratio: 16 / 8;
+    background-color: hsl(0 0% 85%);
+}
+
+#Instructions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1%;
+    gap: 5vh;
+}
+
+#Question {
+    box-sizing: border-box;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#Objects {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr; 
+    flex: 1;
+    height: fit-content;
+    gap: 5% 2%;
+    order: 1;
+}
+
+.Object {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    padding: 10%;
+    border-radius: 10%;
+    box-shadow: inset 0 4px 12px hsl(0 0% 5% / 0.5);
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+
+.Object:active {
+    transform: translateY(3%);
+}
+
+#HomeWrapper {
+    position: relative;
+    height: 100%;
+    order: 2;
+}
+
+#Home {
+    box-sizing: border-box;
+    width: auto;
+    height: 100%;
+    border: 0.5vh solid hsl(0 0% 5%);
+    border-right: none;
+    border-top-left-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+}
+
+.Object.selected {
+    outline: 3px solid hsl(200 80% 50%);
+    transform: scale(1.05);
+}
+
+.Dropzone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 10%;
+    aspect-ratio: 1 / 1;
+    transform: translate(-50%, -50%);
+    border: 2px dashed hsl(200 80% 50%);
+    border-radius: 10px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: hsl(200 80% 30%);
+    background: hsl(200 80% 90% / 0.6);
+    cursor: pointer;
+}
