@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Русский</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Instructions">
+        <h1 id="Question">К какому месту в комнате относятся эти предметы?</h1>
+        <div id="Objects">
+            <img class="Object" src="./Images/Ball.svg" alt="Ball" data-target="ball">
+            <img class="Object" src="./Images/Phone.svg" alt="Phone" data-target="phone">
+            <img class="Object" src="./Images/Bag.svg" alt="Bag" data-target="bag">
+            <img class="Object" src="./Images/Alarm.svg" alt="Alarm" data-target="alarm">
+            <img class="Object" src="./Images/Teddy Bear.svg" alt="Teddy" data-target="teddy">
+            <img class="Object" src="./Images/Globe.svg" alt="Globe" data-target="globe">
+        </div>
+    </div>
+    <div id="HomeWrapper">
+        <img id="Home" src="./Images/Home.svg" alt="Home">
+        <div class="Dropzone" data-accept="ball" style="bottom:3%; right:6.5%;">?</div>
+        <div class="Dropzone" data-accept="phone" style="top:55%; right: 66.5%;">?</div>
+        <div class="Dropzone" data-accept="bag" style="bottom:3%; right:27%;">?</div>
+        <div class="Dropzone" data-accept="alarm" style="top:55%; right:35%;">?</div>
+        <div class="Dropzone" data-accept="teddy" style="top:56%; right:2.5%;">?</div>
+        <div class="Dropzone" data-accept="globe" style="top:56%; right:22%;">?</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
