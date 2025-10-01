@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1200" role="img" aria-label="iPhone 17 Pro Space Blue back view">
+  <defs>
+    <linearGradient id="blue-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a4dab"/><stop offset="1" stop-color="#0a2b64"/>
+    </linearGradient>
+    <radialGradient id="lens" cx="30%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#8aa0b0"/><stop offset=".35" stop-color="#2b3d4a"/><stop offset="1" stop-color="#0a0a0a"/>
+    </radialGradient>
+    <radialGradient id="lens-glare" cx="25%" cy="25%" r="50%">
+      <stop offset="0" stop-color="rgba(255,255,255,.9)"/><stop offset=".2" stop-color="rgba(255,255,255,.3)"/><stop offset="1" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Centered smaller phone -->
+  <rect x="180" y="360" width="240" height="480" rx="50" fill="url(#blue-grad)" stroke="#111" stroke-width="1.5"/>
+  <rect x="210" y="390" width="50" height="95" rx="25" fill="#111" stroke="#333" stroke-width="0.75"/>
+  
+  <circle cx="235" cy="415" r="20" fill="#000"/>
+  <circle cx="235" cy="415" r="15" fill="url(#lens)" stroke="#2b2f34" stroke-width="1"/>
+  <circle cx="231" cy="410" r="5" fill="url(#lens-glare)"/>
+  
+  <circle cx="235" cy="460" r="20" fill="#000"/>
+  <circle cx="235" cy="460" r="15" fill="url(#lens)" stroke="#2b2f34" stroke-width="1"/>
+  <circle cx="231" cy="452" r="5" fill="url(#lens-glare)"/>
+</svg>
